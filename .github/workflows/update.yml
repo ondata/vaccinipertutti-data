@@ -14,8 +14,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Verifica aggiornamenti
       run: |-
-        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/somministrazioni-vaccini-summary-latest.json
-        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/last-update-dataset.json
+        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/somministrazioni-vaccini-summary-latest.json -O somministrazioni-vaccini-summary-latest.json
+        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/last-update-dataset.json -O last-update-dataset.json
     - name: Committa e pusha se ci sono variazioni nei dati
       run: |-
         git config user.name "OndataBot"
