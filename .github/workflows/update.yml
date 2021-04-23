@@ -15,7 +15,8 @@ jobs:
     - name: Verifica aggiornamenti
       run: |-
         git pull
-        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/somministrazioni-vaccini-summary-latest.json -O somministrazioni-vaccini-summary-latest.json
+        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/somministrazioni-vaccini-latest.json -O somministrazioni-vaccini-latest.json
+        wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/consegne-vaccini-latest.json -O consegne-vaccini-latest.json
         wget https://github.com/italia/covid19-opendata-vaccini/raw/master/dati/last-update-dataset.json -O last-update-dataset.json
     - name: Committa e pusha se ci sono variazioni nei dati
       run: |-
