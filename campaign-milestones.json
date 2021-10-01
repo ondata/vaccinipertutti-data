@@ -109,5 +109,21 @@
         "total": 47713190
       }
     ]
+  },
+  {
+    "startDate": "2021-10-01",
+    "endDate": "2021-10-31",
+    "label": "100% della popolazione",
+    "source": {
+      "name": "Presidenza del Consiglio dei Ministri",
+      "url": "https://www.governo.it/sites/governo.it/files/210313_Piano_Vaccinale_marzo_2021.pdf"
+    },
+    "total": 59641488,
+    "people": [
+      {
+        "type": "100% della popolazione",
+        "total": 59641488
+      }
+    ]
   }
 ]
